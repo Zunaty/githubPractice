@@ -31,7 +31,12 @@ module.exports = {
             .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Party & Wedding Equipment')
             .back()
 
-            //These Test the button buttons
+            .click('(//*/div[@class="sc-jqCOkK djSgtl sc-gqjmRU fmVgeN"])[5]')
+            .waitForElementVisible('//input[@name="keyword"]')
+            .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Tools')
+            .back()
+
+            //These Test the bottom buttons
             .click('(//*/div[@class="f-1 f-cc"])[1]')
             .waitForElementVisible('//input[@name="keyword"]')
             .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Tools')
@@ -45,6 +50,16 @@ module.exports = {
             .click('(//*/div[@class="f-1 f-cc"])[3]')
             .waitForElementVisible('//input[@name="keyword"]')
             .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Electronics')
+            .back()
+
+            .click('(//*/div[@class="f-1 f-cc"])[6]')
+            .waitForElementVisible('//input[@name="keyword"]')
+            .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Clothing')
+            .back()
+
+            .click('(//*/div[@class="f-1 f-cc"])[13]')
+            .waitForElementVisible('//input[@name="keyword"]')
+            .assert.containsText('//*/div[@class="sc-jKVCRD jSqgxr"]','Music')
             .back()
     }
 }
